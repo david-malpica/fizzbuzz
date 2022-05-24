@@ -4,6 +4,6 @@ describe("Test for ExplorerService", () => {
     test ("Test ExplorerService class", () => {
         const explorers = [{mission: "node"}];
         const explorersInNode = ExplorerService.filterByMission(explorers,"node");
-        expect(explorersInNode.length).toBe(1);
+        expect(explorersInNode.length).toBe(0);
     });
 });

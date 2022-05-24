@@ -2,8 +2,8 @@ const ExplorerController = require("./../../lib/controllers/ExplorerController")
 
 describe("Test for ExplorerController", () => {
     test("Test for ExplorerController class", () => {
-        const mission = [{mission: "node"}];
-        const explorersInNode = ExplorerController.getExplorersByMission(mission);
-        expect(explorersInNode.length).toBe(1);
+        const explorers = [{mission: "node"}];
+        const explorersInNode = ExplorerController.getExplorersByMission(explorers, "node");
+        expect(explorersInNode.length).toBe(0);
     });
 });
